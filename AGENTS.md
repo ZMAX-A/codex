@@ -29,11 +29,14 @@ Use `$knowledge-gardener` for capture, distillation, connection, review, dedupli
 - Add only meaningful links. Do not add links solely to meet a numeric target.
 - When a likely duplicate exists, write a merge proposal in `00 Inbox/` instead of merging automatically.
 - Never place credentials, tokens, private keys, cookies, or environment-variable values in notes or Git.
+- Treat any password or secret-looking value as sensitive even when it is labelled as an example or temporary value.
+- Never stage private material with `git add .`, `git add -A`, or `git commit -a`; stage only the exact reviewed files.
+- Before committing, inspect the staged diff and stop immediately if it contains a credential or secret-like value.
 
 ## Completion checks
 
 - Confirm each new knowledge note has valid frontmatter and a clear title.
 - Confirm source-dependent claims point to a source note or URL.
 - Confirm new notes are reachable from at least one relevant map or project note.
+- Run the configured pre-commit secret scan before every commit; never bypass it for knowledge-base content.
 - Report created files, changed files, unresolved uncertainty, and suggested next actions.
-

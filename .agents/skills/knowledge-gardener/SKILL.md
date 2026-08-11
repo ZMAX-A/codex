@@ -35,5 +35,6 @@ Grow the vault through small, sourced, reversible changes. Follow `AGENTS.md` an
 - Preserve conflicting claims under a conflict or boundary section with separate sources.
 - Do not manufacture citations or treat model output as a source.
 - Do not store credentials, private keys, cookies, tokens, or environment-variable values.
+- Treat password-like or secret-looking values as sensitive even when they are described as examples, temporary values, or already revoked.
+- Stage only exact reviewed files. Never use catch-all Git staging commands, and never bypass a secret-scanning hook.
 - If scope or evidence is insufficient, stop promotion, leave the material in Inbox, and state what is needed.
-

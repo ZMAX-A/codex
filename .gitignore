@@ -19,3 +19,16 @@ desktop.ini
 *.bak
 *~
 
+# Local-only private material and credential files
+欢迎.md
+Private/
+Secrets/
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+*.pem
+*.p12
+*.pfx
+
