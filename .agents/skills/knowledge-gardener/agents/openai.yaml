@@ -1,0 +1,5 @@
+interface:
+  display_name: "知识园丁"
+  short_description: "将零散材料沉淀为可链接、可审计、持续演化的知识网络"
+  default_prompt: "使用 $knowledge-gardener 整理新增材料，提炼原子笔记并更新相关知识地图。"
+

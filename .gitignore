@@ -1,0 +1,21 @@
+# Obsidian device-local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/
+
+# Claudian sessions, host paths, and possible provider environment values
+.claudian/
+
+# Obsidian trash and OS files
+.trash/
+.recycle/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
