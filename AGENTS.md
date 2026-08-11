@@ -19,6 +19,16 @@ Treat this vault as a long-lived Obsidian knowledge base, not as a scratch direc
 
 Use `$knowledge-gardener` for capture, distillation, connection, review, deduplication proposals, and map maintenance.
 
+## Natural-language triggers and default autonomy
+
+- Treat `整理一下` as an explicit request to invoke `$knowledge-gardener` and execute the full autonomous workflow in `90 System/Autonomous Gardening Rules.md`.
+- Treat `整理一下，不提交` as the same workflow without Git commit or push.
+- Treat `只检查一下` as a read-only health review with no file or Git changes.
+- Treat `整理一下 <path or note>` as a scoped run limited to the named material and the maps or source notes needed to connect it.
+- These phrases work without the user explicitly naming the skill. Do not ask the user to repeat the request with `$knowledge-gardener`.
+- For `整理一下`, the user pre-authorizes low-risk additive edits, exact-file staging, commit, and push after all checks pass.
+- This default authorization never covers deletion, moving, renaming, merging, archiving, bulk rewriting, conflict resolution, secret handling, or unrelated pre-existing changes. Stop and request approval for those actions.
+
 ## Editing rules
 
 - Prefer creating a focused note or making a small additive edit over rewriting a large existing note.

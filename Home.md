@@ -2,7 +2,7 @@
 type: moc
 status: growing
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-11
 aliases:
   - 知识库首页
 tags:
@@ -12,7 +12,7 @@ tags:
 # TestOps Platform 知识库
 
 > [!info] 使用方式
-> 将临时材料放入 [[00 Inbox/Inbox|Inbox]]，然后在 Claudian 中调用 `$knowledge-gardener` 完成提炼、链接和知识地图更新。
+> 将临时材料放入 [[00 Inbox/Inbox|Inbox]]。需要处理时只要在 Claudian 中说“整理一下”，它会按 [[90 System/Autonomous Gardening Rules|自主整理规则]] 自动完成提炼、链接、知识地图更新、校验和 Git 同步。
 
 ## 导航
 
@@ -30,7 +30,8 @@ tags:
 
 ## 例行操作
 
-- 处理 Inbox：`使用 $knowledge-gardener 整理 00 Inbox 中的新增材料。`
-- 连接知识：`使用 $knowledge-gardener 检查最近笔记的关联并更新知识地图。`
-- 健康检查：`使用 $knowledge-gardener 检查孤立、重复、冲突和过期笔记，只输出安全修复和待确认建议。`
-
+- 完整整理并同步：`整理一下`
+- 整理但暂不提交 Git：`整理一下，不提交`
+- 只读健康检查：`只检查一下`
+- 整理指定材料：`整理一下 00 Inbox/材料名称.md`
+- 连接知识：`检查最近笔记的关联并更新知识地图`

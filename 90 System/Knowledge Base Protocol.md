@@ -2,7 +2,7 @@
 type: protocol
 status: evergreen
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-11
 aliases:
   - 知识库协议
 tags:
@@ -25,6 +25,13 @@ tags:
 5. **Apply**：项目相关决策与交付物在 `40 Projects/` 中引用知识，而不是复制知识。
 6. **Review**：定期检查孤立、重复、冲突、缺少来源和长期未更新的笔记。
 7. **Archive**：只有在用户确认后，才把不活跃内容移动到 `99 Archive/`。
+
+## 自动整理约定
+
+- 自然语言触发、默认整理范围、自动提交和人工确认边界以 [[90 System/Autonomous Gardening Rules|自主整理规则]] 为准。
+- “整理一下”表示用户授权本次执行低风险、增量式的完整整理，并在全部检查通过后提交和推送 Git。
+- 自主整理不是后台定时运行；只有用户发出触发指令时才执行。
+- Inbox 单条材料使用 `processing_status: unprocessed`、`processed` 或 `blocked` 跟踪是否已处理。
 
 ## 元数据规范
 
@@ -74,4 +81,3 @@ confidence: low
 - 新外部事实具有来源，或明确标为待验证。
 - wikilink 指向存在的文件或明确的待建主题。
 - 汇报新增、修改、未解决问题和需要用户批准的建议。
-

@@ -16,6 +16,15 @@ Grow the vault through small, sourced, reversible changes. Follow `AGENTS.md` an
 - **Apply**: Link stable knowledge into an active note in `40 Projects/`.
 - **Review**: Find orphans, likely duplicates, unsupported claims, conflicts, and stale notes.
 
+## Interpret simple user triggers
+
+- `整理一下`: Run the full autonomous workflow defined in `90 System/Autonomous Gardening Rules.md`, including validated exact-file Git commit and push.
+- `整理一下，不提交`: Run the full workflow but leave validated changes uncommitted.
+- `只检查一下`: Perform a read-only health review and report findings without changes.
+- `整理一下 <path or note>`: Limit processing to the named material and directly required source, map, or project updates.
+
+Do not require the user to mention `$knowledge-gardener` explicitly when the intent matches one of these triggers.
+
 ## Execute the workflow
 
 1. Read the requested material, relevant map, and related notes. Search titles, aliases, and key phrases before creating a file.
@@ -26,6 +35,16 @@ Grow the vault through small, sourced, reversible changes. Follow `AGENTS.md` an
 6. Add only links whose relationship can be explained. Update at least one relevant map or project entry so the new note is discoverable.
 7. Validate frontmatter, filenames, wikilinks, source support, and accidental duplicates.
 8. Summarize created files, changed files, unresolved uncertainty, and approval-required proposals.
+
+## Complete an autonomous run
+
+1. Require a clean Git worktree before editing. If unrelated changes already exist, stop and report them.
+2. Process only Inbox notes with `processing_status: unprocessed` plus material explicitly named by the user.
+3. Preserve raw Inbox text. After validation, set `processing_status: processed`, add `processed` with today's date, and list generated notes under `outputs`.
+4. If evidence is insufficient, set `processing_status: blocked`, record a short non-secret blocker, and continue processing other safe items.
+5. Validate frontmatter, source support, wikilinks, duplicates, filenames, and `git diff --check`.
+6. For a default `整理一下` run, stage only the exact reviewed files, allow the configured secret-scanning hook to run, commit with a concise `knowledge:` message, and push to `origin/main`.
+7. If validation, commit, or push fails, stop without bypassing safeguards and report the exact state.
 
 ## Guardrails
 
