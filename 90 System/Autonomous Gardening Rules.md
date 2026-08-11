@@ -57,4 +57,4 @@ Claudian/Codex 必须自动调用 `$knowledge-gardener`，不得要求用户重�
 - 成功推送后报告：处理材料、创建知识、更新地图、阻塞项、提交哈希和同步状态。
 - 如果没有可安全处理的新增材料，报告“无需整理”，不创建空提交。
 
-返回 [[Home]] 与 [[90 System/Knowledge Base Protocol|知识库协议]]。
+返回 [[Home]]、[[90 System/自生长知识库使用方法|使用手册]] 与 [[90 System/Knowledge Base Protocol|知识库协议]]。

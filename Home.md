@@ -21,6 +21,7 @@ tags:
 - [[20 Knowledge/Knowledge|知识库]]：可复用的原子知识
 - [[30 Maps/Knowledge Map|知识地图]]：主题与概念入口
 - [[40 Projects/Projects|项目]]：目标、决策和交付物
+- [[90 System/自生长知识库使用方法|使用手册]]：用途、工作流、操作口令、Git 关系和安全边界
 - [[90 System/Knowledge Base Protocol|知识库协议]]：结构、元数据和生长规则
 - [[99 Archive/Archive|归档]]：不再活跃的内容
 
