@@ -2,7 +2,7 @@
 type: moc
 status: growing
 created: 2026-08-10
-updated: 2026-08-13
+updated: 2026-08-19
 aliases:
   - 知识地图
 tags:
@@ -18,6 +18,11 @@ tags:
 ### 平台架构
 
 - [[20 Knowledge/成熟 TestOps 平台优先分离职责边界|成熟 TestOps 平台优先分离职责边界]]：以治理、执行和结果分析的逻辑分层指导渐进式架构演进
+
+### 移动端自动化
+
+- [[10 Sources/2026-08-19 APP 自动化测试项目调研|2026-08-19 APP 自动化测试项目调研]]：Appium、Maestro、Detox、AndroidX Test、idb、Poco、Marathon 与设备农场项目对比
+- [[20 Knowledge/APP 自动化测试平台应分离测试引擎、平台适配与设备资源层|APP 自动化测试平台应分离测试引擎、平台适配与设备资源层]]：将测试表达、平台动作、设备调度和结果制品通过协议解耦
 
 ### 测试治理
 
